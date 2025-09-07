@@ -7,6 +7,9 @@
            sync-j="4"
            revision="refs/heads/lineage-22.2" />
 
+    <remote name="gh" fetch="https://github.com" sync-c="true" sync-j="4" />
+    <remote name="gl" fetch="https://gitlab.com" sync-c="true" sync-j="4" />
+
     <!-- build -->
     <project path="build/make" name="android_build" groups="pdk,sysui-studio" remote="jqk" >
         <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -33,6 +36,7 @@
     <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc" remote="jqk" />
     <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" groups="pdk-fs,sysui-studio,pdk-cw-tvc" remote="jqk" />
     <project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="jqk" />
+    <project path="packages/apps/FaceUnlock" name="Evolution-X/packages_apps_FaceUnlock" remote="gh" revision="refs/heads/vic" />
 
     <!-- system -->
     <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="jqk" />
@@ -40,5 +44,6 @@
     <!-- vendor -->
     <project path="vendor/lineage" name="android_vendor_lineage" remote="jqk" />
     <project path="vendor/lineage-priv/keys" name="android_vendor_lineage-priv_keys" remote="jqk" revision="refs/heads/main" />
+    <project path="vendor/gapps" name="MindTheGapps/vendor_gapps" remote="gl" revision="refs/heads/vic" />
 
 </manifest>
