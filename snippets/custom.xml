@@ -45,5 +45,5 @@
     <project path="vendor/lineage" name="android_vendor_lineage" remote="jqk" />
     <project path="vendor/lineage-priv/keys" name="android_vendor_lineage-priv_keys" remote="jqk" revision="refs/heads/main" />
     <project path="vendor/gapps" name="MindTheGapps/vendor_gapps" remote="gl" revision="refs/heads/vic" />
-
+    <project path="vendor/ext/PixelPlay" name="android_vendor_ext_PixelPlay" remote="jqk" revision="refs/heads/master" />
 </manifest>
